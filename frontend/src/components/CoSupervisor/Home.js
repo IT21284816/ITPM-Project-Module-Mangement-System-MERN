@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import {FaFileAlt, FaEnvelope } from 'react-icons/fa'; // Adding icons for buttons
-import photoURL from '../photo/085e.jpg'
+import photoURL from '../photo/girl.jpg'
 import Header from '../Header/header'
 import Footer from '../Footer/footer'
 
@@ -15,17 +15,20 @@ const Home = () => {
   };
 
   const handleGoReg = () => {
-    navigate('/addstud'); // Redirect to the home page
+    navigate('/supervisor-input'); // Redirect to the home page
   };
 
   const handleGoContact = () => {
-    navigate('/contactus'); // Redirect to the home page
+    navigate('/cosupervisorcontactus'); // Redirect to the home page
+  };
+  const handleGoList = () => {
+    navigate('/supervisor-list'); // Redirect to the home page
   };
 
   // Sample user data
   const user = {
-    name: "Duhun De Silva",
-    email: "duhun@gmail.com",
+    name: "Minoli Rashmitha",
+    email: "Minoli@gmail.com",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero ac nisl vehicula eleifend.",
     // Add photoURL here if available
   };
@@ -33,7 +36,7 @@ const Home = () => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Header/>
-      <h1 className='text-center' style={{marginTop:'20px'}}>Cosupervisor Profile</h1>
+      <h1 className='text-center' style={{marginTop:'20px'}}>Co-Supervisor Profile</h1>
       <br></br>
       <hr></hr>
       {/* Main content area */}
@@ -52,9 +55,11 @@ const Home = () => {
             <p className="card-text">{user.bio}</p>
           </div>
         </div>
-        <button className="btn btn-primary d-block mx-auto mt-5 mb-3" onClick={handleGoReg}><FaFileAlt  /> &nbsp; &nbsp;Project Registration
+        <button className="btn btn-primary d-block mx-auto mt-5 mb-3" onClick={handleGoReg}><FaFileAlt  /> &nbsp; &nbsp;Report Marks Add
         </button>
-        <button className="btn btn-info d-block mx-auto mt-2 mb-3" onClick={handleGoContact}><FaEnvelope   /> &nbsp; &nbsp;Contact Us
+        <button className="btn btn-success d-block mx-auto mb-3" onClick={handleGoList}><FaFileAlt  /> &nbsp; &nbsp;Report Marks List
+        </button>
+        <button className="btn btn-info d-block mx-auto mt-2 mb-3" onClick={handleGoContact}><FaEnvelope   /> &nbsp; &nbsp;Contact Us - Co Supervisor
         </button>
 
       </div>

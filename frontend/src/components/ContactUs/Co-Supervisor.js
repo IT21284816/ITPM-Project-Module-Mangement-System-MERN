@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { Card, Button } from 'react-bootstrap';
-import Navbar from "../Student/Navbar"
+import Header from '../Header/header'
+import Footer from '../Footer/footer'
 
 const ContactUs = () => {
   const [contactList, setContactList] = useState([]);
@@ -44,12 +45,12 @@ const ContactUs = () => {
   `;
 
   return (
-    <div>
-            <Navbar />
-    <div className="container mt-4">
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+      <Header/>
+    <div className="container mt-4" style={{flex: '1'}}>
         <br></br>
       <style>{contactCardStyle}</style>
-      <h3>Contact Us - Co-Supervisor</h3>
+      <h3 style={{ backgroundColor: '#F0E68C', padding: '15px' }}>Contact Us - Co-Supervisor</h3>
       <br></br><br></br>
       <div className="row">
         {contactList.map((contact, index) => (
@@ -75,8 +76,10 @@ const ContactUs = () => {
           </div>
         ))}
       </div>
+      <Link className='btn btn-primary mt-5 mb-2' to="/cosupervisor-home">Back to Home</Link>
     </div>
-    </div>
+    <Footer style={{ flexShrink: '0' }} />
+        </div>
   );
 };
 
