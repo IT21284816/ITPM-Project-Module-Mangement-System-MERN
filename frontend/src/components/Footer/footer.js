@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer style={styles.footer}>
       <div style={styles.container}>
-        <p>&copy; 2024 Project Management System</p>
+        <p>&copy; 2024 Project Module Management System</p>
       </div>
     </footer>
   );
