@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useParams } from 'react-router-dom';
-import Navbar from "../Student/Navbar"
+import Header from '../Header/header'
+import Footer from '../Footer/footer'
 
 const ContactUsView = () => {
   const { id } = useParams();
@@ -22,15 +23,15 @@ const ContactUsView = () => {
   }, [id]);
 
   return (
-    <div>
-            <Navbar />
-    <div className="container mt-4">
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
+    <Header/>
+    <div className="container mt-4" style={{flex: '1'}}>
       <br></br><br></br>
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className="card" style={{ backgroundColor: '#f8f9fa' }}>
             <div className="card-body">
-              <h3 className="card-title">Contact Us Details</h3>
+              <h3 className="card-title" style={{ backgroundColor: '#F0E68C', padding: '15px' }}>Contact Us Details</h3>
               {error ? (
                 <div className="alert alert-danger" role="alert">
                   {error}
@@ -71,7 +72,8 @@ const ContactUsView = () => {
         </div>
       </div>
     </div>
-    </div>
+    <Footer style={{ flexShrink: '0' }} />
+        </div>
   );
 };
 

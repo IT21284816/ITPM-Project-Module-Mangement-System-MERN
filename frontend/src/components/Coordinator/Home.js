@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import {FaFileAlt, FaEnvelope } from 'react-icons/fa'; // Adding icons for buttons
-import photoURL from '../photo/085e.jpg'
+import photoURL from '../photo/02.png'
 import Header from '../Header/header'
 import Footer from '../Footer/footer'
 
@@ -19,13 +19,13 @@ const Home = () => {
   };
 
   const handleGoContact = () => {
-    navigate('/contactus'); // Redirect to the home page
+    navigate('/coordinatorcontactus'); // Redirect to the home page
   };
 
   // Sample user data
   const user = {
-    name: "Duhun De Silva",
-    email: "duhun@gmail.com",
+    name: "Gimhana Deshapriya",
+    email: "gimhana@gmail.com",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut libero ac nisl vehicula eleifend.",
     // Add photoURL here if available
   };
