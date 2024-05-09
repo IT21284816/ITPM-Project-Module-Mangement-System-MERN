@@ -112,7 +112,7 @@ export default function Addstud() {
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
         <Header/>
         <div className='container mt-5' style={{flex: '1'}}>
-            <h4>Report - Marks</h4>
+            <h4 style={{ backgroundColor: '#F0E68C', padding: '15px' }}>Report - Marks</h4>
             <div className='underline'></div>
             <form className='mt-5 shadow p-5 w-100'>
 

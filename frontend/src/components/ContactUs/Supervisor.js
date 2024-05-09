@@ -50,7 +50,7 @@ const ContactUs = () => {
     <div className="container mt-4" style={{flex: '1'}}>
         <br></br>
       <style>{contactCardStyle}</style>
-      <h3>Contact Us - Supervisor</h3>
+      <h3 style={{ backgroundColor: '#F0E68C', padding: '15px' }}>Contact Us - Supervisor</h3>
       <br></br><br></br>
       <div className="row">
         {contactList.map((contact, index) => (

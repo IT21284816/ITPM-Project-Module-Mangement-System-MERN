@@ -31,7 +31,7 @@ const ContactUsView = () => {
         <div className="col-md-8">
           <div className="card" style={{ backgroundColor: '#f8f9fa' }}>
             <div className="card-body">
-              <h3 className="card-title">Contact Us Details</h3>
+              <h3 className="card-title mb-4" style={{ backgroundColor: '#F0E68C', padding: '15px' }}>Contact Us Details</h3>
               {error ? (
                 <div className="alert alert-danger" role="alert">
                   {error}
