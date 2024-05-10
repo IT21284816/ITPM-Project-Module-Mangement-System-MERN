@@ -91,7 +91,7 @@ export default function Allstud() {
             <div className='d-flex'>
                 <h4 style={{ backgroundColor: '#F0E68C', padding: '15px' }}>All Report Information</h4>
                 <div class="ms-auto w-50">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Report" 
+                    <input style={{ backgroundColor: '#F0E68C', padding: '10px', borderColor:'black' }} type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Report" 
                         onChange={(e)=>searchStud(e.target.value)}
                     />
                      

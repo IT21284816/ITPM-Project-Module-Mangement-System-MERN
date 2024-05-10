@@ -93,9 +93,9 @@ export default function Edit() {
         <div>
             <Navbar />
         <div className='container mt-5'>
-            <h4>Edit Student Information</h4>
+            <h4 style={{ backgroundColor: '#F0E68C', padding: '15px' }}>Edit Student Information</h4>
             <div className='underline1'></div>
-            <form className='mt-5 shadow p-5 w-75'>
+            <form className='mt-5 shadow p-5 w-100'>
 
 
             <h4>Project Details</h4>

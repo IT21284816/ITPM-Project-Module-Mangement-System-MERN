@@ -92,9 +92,9 @@ export default function Allstud() {
             <Navbar />
         <div className='container mt-5'>
             <div className='d-flex'>
-                <h4>All Project Information</h4>
+                <h4 style={{ backgroundColor: '#F0E68C', padding: '15px' }}>All Project Information</h4>
                 <div class="ms-auto w-50">
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Project Title or Area or Group ID" 
+                    <input style={{ backgroundColor: '#F0E68C', padding: '10px', borderColor:'black' }} type="email" class="form-control" id="exampleFormControlInput1" placeholder="Search Project Title or Area or Group ID" 
                         onChange={(e)=>searchStud(e.target.value)}
                     />
                 </div>
