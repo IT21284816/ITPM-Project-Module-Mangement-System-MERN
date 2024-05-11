@@ -27,7 +27,7 @@ const Home = () => {
 
   // Sample user data
   const user = {
-    name: "Minoli Akka",
+    name: "Minoli Rashmitha",
     email: "Minoli@gmail.com",
     bio: "My journey in software engineering has been marked by exciting challenges and rewarding experiences. I've had the privilege of leading teams on groundbreaking projects, where I've contributed to the development of cutting-edge software solutions.",
     // Add photoURL here if available
